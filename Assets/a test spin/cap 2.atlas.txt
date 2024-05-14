@@ -1,0 +1,97 @@
+
+cap 2.png
+size: 76,80
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Body
+  rotate: false
+  xy: 0, 2
+  size: 16, 22
+  orig: 16, 22
+  offset: 0, 0
+  index: -1
+Caosu
+  rotate: false
+  xy: 43, 13
+  size: 12, 11
+  orig: 12, 11
+  offset: 0, 0
+  index: -1
+Cloak
+  rotate: false
+  xy: 57, 24
+  size: 16, 28
+  orig: 16, 28
+  offset: 0, 0
+  index: -1
+Cloak2
+  rotate: false
+  xy: 37, 25
+  size: 19, 27
+  orig: 19, 27
+  offset: 0, 0
+  index: -1
+Gun
+  rotate: false
+  xy: 0, 43
+  size: 36, 15
+  orig: 36, 15
+  offset: 0, 0
+  index: -1
+Hand_L
+  rotate: false
+  xy: 21, 28
+  size: 13, 14
+  orig: 13, 14
+  offset: 0, 0
+  index: -1
+Hand_R
+  rotate: false
+  xy: 0, 26
+  size: 20, 16
+  orig: 20, 16
+  offset: 0, 0
+  index: -1
+Head
+  rotate: false
+  xy: 42, 53
+  size: 29, 26
+  orig: 29, 26
+  offset: 0, 0
+  index: -1
+Layer 1
+  rotate: false
+  xy: 0, 59
+  size: 41, 20
+  orig: 41, 20
+  offset: 0, 0
+  index: -1
+Leg_L
+  rotate: false
+  xy: 17, 8
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: -1
+Leg_R
+  rotate: false
+  xy: 56, 6
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: -1
+Shadow
+  rotate: false
+  xy: 17, 0
+  size: 34, 7
+  orig: 34, 7
+  offset: 0, 0
+  index: -1
+Shoudler_R
+  rotate: false
+  xy: 30, 9
+  size: 12, 15
+  orig: 12, 15
+  offset: 0, 0
+  index: -1
