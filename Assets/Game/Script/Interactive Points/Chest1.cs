@@ -5,15 +5,15 @@ using UnityEngine;
 public class Chest1 : MonoBehaviour
 {
     [SerializeField] private GameObject animExplosion;
-    private void OnEnable()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(gameObject, 7.5f/12f);
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("PlayerWeapon"))
+        if (collision.CompareTag("PlayerWeapon"))
         {
+            Debug.Log("enterchest");
             animExplosion.SetActive(true);
+            this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            this.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            Destroy(gameObject, 7.5f / 12f);
         }
     }
 }

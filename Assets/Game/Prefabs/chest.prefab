@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 2806087919580721045}
   - component: {fileID: 8097643382096392955}
   - component: {fileID: 2188012759186152125}
+  - component: {fileID: 6030218332261471503}
+  - component: {fileID: 406344942738784632}
   m_Layer: 0
   m_Name: chest
-  m_TagString: Untagged
+  m_TagString: InteractiveObjects
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 3adaeaac0e6043a49bde329e06ab5b7e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -112,6 +114,40 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5448647, y: 2.379459}
   m_EdgeRadius: 0
+--- !u!50 &6030218332261471503
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6695553522710120910}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1000
+  m_LinearDrag: 0
+  m_AngularDrag: 1000
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &406344942738784632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6695553522710120910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb81c8aef8cea84f86fea631f933cad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animExplosion: {fileID: 293501925712617987}
 --- !u!1001 &2618852318604256143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -172,11 +208,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2326868131469001106, guid: a6add8f6442ada94785f17bae95c8cc8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2326868131469001106, guid: a6add8f6442ada94785f17bae95c8cc8, type: 3}
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6add8f6442ada94785f17bae95c8cc8, type: 3}
+--- !u!1 &293501925712617987 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2326868131469001100, guid: a6add8f6442ada94785f17bae95c8cc8, type: 3}
+  m_PrefabInstance: {fileID: 2618852318604256143}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &293501925712618014 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2326868131469001105, guid: a6add8f6442ada94785f17bae95c8cc8, type: 3}
